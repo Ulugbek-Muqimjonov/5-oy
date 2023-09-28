@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title></title>
+</head>
+<body>
+    <header class="site-header">
+        
+    </header>
+    <main class="site-main">
+        <section class="site-main__hero hero">
+            <div class="container">
+                <div class="hero_wrapper">
+                    <div class="hero__users">
+                        <ul class="hero__users-list">
+                            <template class="hero__user-template">
+                                <li class="hero__users-item">
+                                    <div class="hero__user-name-wrap">
+                                        <h3 class="hero__user-name">Bret</h3>
+                                        <span class="hero__user-id">1</span>
+                                    </div>  
+                                    <strong class="hero__user-fullname">Leanne Graham</strong>
+                                    <a class="hero__user-email" href="mailto:@muqimjonovulugebek">:@muqimjonovulugebek</a>
+                                    <strong class="hero__user-adress">Address</strong>
+                                    <div class="hero__user-adressdiv">
+                                        <a class="hero__user-location" href="">Geo location</a>
+                                        <a class="hero__user-phone" href="">phone</a>
+                                        <a class="hero__user-site" href="">site</a>
+                                    </div>
+                                    <div class="hero__user-companydiv">
+                                        <strong class="hero__user-companyname">Farobiy</strong>
+                                        <p class="hero__user-companydesc">Multi-layered client-server neural-net</p>
+                                        <p class="hero__user-company-bs">harness real-time e-markets</p>
+                                    </div>
+                                    <button class="hero__userbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">btn</button>
+                                </li>
+                            </template>
+                        </ul>
+                        
+                    </div>
+                    <div class="heor__user-post">
+                        
+                    </div>
+                    <div class="hero__user-comment">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Users posts</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <ul class="modal-list list-unstyled">
+                        <template class="hero__post-temp">
+                            <li class="hero__users-post-item">
+                                <strong class="hero__users-post-title"></strong>
+                                <p class="hero__users-post-desc"></p>
+                                <button class="hero__users-post-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">comments</button>
+                            </li>
+                        </template> 
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- commet Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Users Comments</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-comment-list">
+                        <template class="modal-comment-template">
+                            <li class="modal-comment-item d-flex flex-column justify-content-center">
+                                <strong class="modal-comment-title">dwdwd</strong>
+                                <a class="modal-comment-link" href="mailto:">link</a>
+                                <p class="modal-comment-desc">dwdfwdd</p>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/tasks.js"></script>
+</body>
+</html>
