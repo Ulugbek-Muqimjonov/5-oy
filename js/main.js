@@ -44,10 +44,10 @@ async function get() {
         let findPost = [];
         if (evt.target.matches(".hero__userbtn")) {
             const finduser = data.find(item => item.id == evt.target.dataset.id);
-            console.log(finduser);
+            // console.log(finduser);
             
             findPost = post.filter(item => item.userId == finduser.id);
-            console.log(findPost);
+            // console.log(findPost);
             
             
         }
@@ -69,7 +69,7 @@ async function get() {
         postList.addEventListener("click",evt => {
             if (evt.target.matches(".hero__users-post-btn")) {
                 const findComment = comment.filter(item => item.postId == evt.target.dataset.id);
-                console.log(findComment);
+                // console.log(findComment);
                 
                 modalcomment.innerHTML = "";
                 findComment.forEach(item => {
