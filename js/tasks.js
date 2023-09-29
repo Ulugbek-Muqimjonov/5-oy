@@ -69,7 +69,8 @@
 //             olduser = obj[key]
 //         }
 //     }
-//     console.log(olduser);
+//     const user = obj.find(item => item == olduser)
+    
 // }
 // findOlderst(users)
 

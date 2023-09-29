@@ -36,7 +36,7 @@ async function get() {
     async function getComment(url) {
         const res = await fetch(url);
         comment = await res.json();
-        console.log(comment);
+        // console.log(comment);
     }
     getComment("https://jsonplaceholder.typicode.com/comments")
     
@@ -44,6 +44,7 @@ async function get() {
         let findPost = [];
         if (evt.target.matches(".hero__userbtn")) {
             const finduser = data.find(item => item.id == evt.target.dataset.id);
+            console.log(finduser);
             
             findPost = post.filter(item => item.userId == finduser.id);
             console.log(findPost);
@@ -52,7 +53,8 @@ async function get() {
         }
         if (evt.target.matches(".hero__userbtn")) {
             findPost.forEach(item => {
-                console.log(item);
+                // console.log(item);
+                postList.innerHTML = "";
                 const posttemplatClone = posttemplate.cloneNode(true);
                 posttemplatClone.querySelector(".hero__users-post-title").textContent = item.title;
                 
@@ -69,6 +71,7 @@ async function get() {
                 const findComment = comment.filter(item => item.postId == evt.target.dataset.id);
                 console.log(findComment);
                 
+                modalcomment.innerHTML = "";
                 findComment.forEach(item => {
                     const commentTemplateClone = commentTemplate.cloneNode(true);
                     commentTemplateClone.querySelector(".modal-comment-title").textContent = item.name;
